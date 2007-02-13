@@ -1,5 +1,5 @@
 Summary:	Nintendo DS emulator
-Summary(pl.UTF-8):   Emulator Nintendo DS
+Summary(pl.UTF-8):	Emulator Nintendo DS
 Name:		desmume
 Version:	0.6.0
 Release:	1
