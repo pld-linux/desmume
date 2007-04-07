@@ -7,7 +7,7 @@ License:	GPL v2+
 Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/desmume/%{name}-%{version}.tar.gz
 # Source0-md5:	48f192b8839affc03b2b28e5eb509984
-URL:		http://desmume.sourceforge.net/
+URL:		http://desmume.org/
 BuildRequires:	SDL-devel
 BuildRequires:	atk-devel
 BuildRequires:	cairo-devel
