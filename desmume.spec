@@ -9,10 +9,11 @@ Source0:	http://dl.sourceforge.net/desmume/%{name}-%{version}.tar.gz
 # Source0-md5:	48f192b8839affc03b2b28e5eb509984
 URL:		http://desmume.org/
 BuildRequires:	SDL-devel
-BuildRequires:	atk-devel
-BuildRequires:	cairo-devel
-BuildRequires:	freetype-devel
-BuildRequires:	gtk+2-devel
+BuildRequires:	gtk+2-devel >= 1:2.0
+BuildRequires:	libglade2-devel >= 2.0
+BuildRequires:	pkgconfig
+BuildRequires:	zlib-devel
+BuildRequires:	zziplib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
