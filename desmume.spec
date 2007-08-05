@@ -10,6 +10,8 @@ Source0:	http://dl.sourceforge.net/desmume/%{name}-%{version}.tar.gz
 Patch0:		%{name}-desktop.patch
 URL:		http://desmume.org/
 BuildRequires:	SDL-devel
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	dos2unix
 BuildRequires:	gtk+2-devel >= 1:2.0
 BuildRequires:	gtkglext-devel
