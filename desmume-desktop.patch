@@ -1,13 +1,13 @@
---- desmume-0.7.2/src/gtk/desmume.desktop.in~	2007-08-04 14:45:31.000000000 +0200
-+++ desmume-0.7.2/src/gtk/desmume.desktop.in	2007-08-04 14:46:23.000000000 +0200
+--- desmume-0.7.3/src/gtk/desmume.desktop.in~	2007-08-12 16:49:37.000000000 +0200
++++ desmume-0.7.3/src/gtk/desmume.desktop.in	2007-08-12 16:49:10.000000000 +0200
 @@ -2,9 +2,11 @@
  Encoding=UTF-8
- Version=0.7.2
+ Version=@VERSION@
  Type=Application
 -Name=DeSmuME (Gtk)
 +Name=DeSmuME
  Comment=Nintento DS emulator
-+Comment[pl]=Emulator Nintendo DS
++Comment[pl]=Emulator Nintendo DS^
  TryExec=desmume
  Exec=desmume
  Icon=DeSmuME.xpm
