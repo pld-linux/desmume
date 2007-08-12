@@ -1,18 +1,17 @@
 Summary:	Nintendo DS emulator
 Summary(pl.UTF-8):	Emulator Nintendo DS
 Name:		desmume
-Version:	0.7.2
+Version:	0.7.3
 Release:	1
 License:	GPL v2+
 Group:		Applications/Emulators
 Source0:	http://dl.sourceforge.net/desmume/%{name}-%{version}.tar.gz
-# Source0-md5:	9168c8b3bf88a87342cfbf8a4e602f82
+# Source0-md5:	baf5da88a0ec2e43378e11735ac72072
 Patch0:		%{name}-desktop.patch
 URL:		http://desmume.org/
 BuildRequires:	SDL-devel
-BuildRequires:	autoconf
-BuildRequires:	automake
-BuildRequires:	dos2unix
+#BuildRequires:	autoconf
+#BuildRequires:	automake
 BuildRequires:	gtk+2-devel >= 1:2.0
 BuildRequires:	gtkglext-devel
 BuildRequires:	libglade2-devel >= 2.0
@@ -31,12 +30,11 @@ demonstracyjne i gry komercyjne.
 %prep
 %setup -q
 %patch0 -p1
-dos2unix configure.ac
 
 %build
-%{__aclocal}
-%{__autoconf}
-%{__automake}
+#%%{__aclocal}
+#%%{__autoconf}
+#%%{__automake}
 %configure
 %{__make}
 
