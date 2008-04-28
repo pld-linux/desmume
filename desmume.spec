@@ -16,6 +16,7 @@ BuildRequires:	gtk+2-devel >= 1:2.0
 BuildRequires:	gtkglext-devel
 BuildRequires:	libglade2-devel >= 2.0
 BuildRequires:	pkgconfig
+BuildRequires:	rpmbuild(macros) >= 1.197
 BuildRequires:	zlib-devel
 BuildRequires:	zziplib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
