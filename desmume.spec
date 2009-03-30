@@ -1,12 +1,12 @@
 Summary:	Nintendo DS emulator
 Summary(pl.UTF-8):	Emulator Nintendo DS
 Name:		desmume
-Version:	0.8
+Version:	0.9.1
 Release:	1
 License:	GPL v2+
 Group:		Applications/Emulators
 Source0:	http://dl.sourceforge.net/desmume/%{name}-%{version}.tar.gz
-# Source0-md5:	d8bf49dfd8d571af3a16be105c70dfda
+# Source0-md5:	38cd7fbfed4358810ce17b2978eb9a8f
 Patch0:		%{name}-desktop.patch
 URL:		http://desmume.org/
 BuildRequires:	SDL-devel
@@ -18,7 +18,7 @@ BuildRequires:	libglade2-devel >= 2.0
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.197
 BuildRequires:	zlib-devel
-BuildRequires:	zziplib-devel
+BuildRequires:	zziplib-devel >= 0.13.49
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -55,4 +55,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS ChangeLog README
 %attr(755,root,root) %{_bindir}/*
 %{_desktopdir}/%{name}.desktop
+%{_mandir}/man1/desmume*.1*
 %{_pixmapsdir}/DeSmuME.xpm
