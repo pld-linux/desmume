@@ -1,12 +1,12 @@
 Summary:	Nintendo DS emulator
 Summary(pl.UTF-8):	Emulator Nintendo DS
 Name:		desmume
-Version:	0.9.1
+Version:	0.9.2
 Release:	1
 License:	GPL v2+
 Group:		Applications/Emulators
 Source0:	http://dl.sourceforge.net/desmume/%{name}-%{version}.tar.gz
-# Source0-md5:	38cd7fbfed4358810ce17b2978eb9a8f
+# Source0-md5:	51482de785dce04590532b946321196d
 Patch0:		%{name}-desktop.patch
 URL:		http://desmume.org/
 BuildRequires:	SDL-devel
