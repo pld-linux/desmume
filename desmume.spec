@@ -1,13 +1,17 @@
+#
+# TODO: fix build with %%find_lang macro
+#
 Summary:	Nintendo DS emulator
 Summary(pl.UTF-8):	Emulator Nintendo DS
 Name:		desmume
-Version:	0.9.2
+Version:	0.9.4
 Release:	1
 License:	GPL v2+
 Group:		Applications/Emulators
 Source0:	http://dl.sourceforge.net/desmume/%{name}-%{version}.tar.gz
-# Source0-md5:	51482de785dce04590532b946321196d
+# Source0-md5:	0e877fe4b99d99502173efa6efae05b1
 Patch0:		%{name}-desktop.patch
+Patch1:		%{name}-shadowing.patch
 URL:		http://desmume.org/
 BuildRequires:	SDL-devel
 BuildRequires:	autoconf
@@ -31,6 +35,7 @@ demonstracyjne i gry komercyjne.
 %prep
 %setup -q
 %patch0 -p1
+%patch1 -p1
 
 %build
 %{__aclocal}
@@ -45,12 +50,13 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-%find_lang %{name} --all-name
+#%%find_lang %{name} --all-name
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files -f %{name}.lang
+#%%files -f %{name}.lang
+%files
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog README
 %attr(755,root,root) %{_bindir}/*
