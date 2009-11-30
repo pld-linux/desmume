@@ -1,26 +1,33 @@
---- desmume-0.9.1/src/gtk-glade/desmume-glade.desktop~	2009-02-08 22:59:16.000000000 +0100
-+++ desmume-0.9.1/src/gtk-glade/desmume-glade.desktop	2009-03-30 14:16:38.000000000 +0200
-@@ -3,7 +3,9 @@
+--- desmume-0.9.5/src/gtk-glade/desmume-glade.desktop~	2009-11-26 21:38:18.000000000 +0000
++++ desmume-0.9.5/src/gtk-glade/desmume-glade.desktop	2009-11-30 14:36:15.080961238 +0000
+@@ -1,9 +1,10 @@
+ [Desktop Entry]
+-Version=1.0
  Type=Application
  Name=DeSmuME (Gtk-Glade)
- Comment=Nintento DS emulator
-+Comment[pl]=Emulator Nintendo D
+-Comment=Nintento DS emulator
++Comment=Nintendo DS emulator
++Comment[pl]=Emulator Nintendo DS
  TryExec=desmume-glade
  Exec=desmume-glade
  Icon=DeSmuME
 -Categories=GNOME;GTK;Game;Emulator;
 +Categories=Application;Game;
 +# vi: encoding=utf-8
---- desmume-0.9.1/src/gtk/desmume.desktop~	2009-02-08 22:59:14.000000000 +0100
-+++ desmume-0.9.1/src/gtk/desmume.desktop	2009-03-30 14:19:34.000000000 +0200
-@@ -3,7 +3,9 @@
+--- desmume-0.9.5/src/gtk/desmume.desktop~	2009-11-26 21:38:13.000000000 +0000
++++ desmume-0.9.5/src/gtk/desmume.desktop	2009-11-30 14:37:35.077621144 +0000
+@@ -1,10 +1,10 @@
+ [Desktop Entry]
+-Version=1.0
  Type=Application
  Name=DeSmuME (Gtk)
- Comment=Nintento DS emulator
+-Comment=Nintento DS emulator
++Comment=Nintendo DS emulator
 +Comment[pl]=Emulator Nintendo DS
  TryExec=desmume
  Exec=desmume
  Icon=DeSmuME
 -Categories=GNOME;GTK;Game;Emulator;
+-MimeType=application/x-nintendo-ds-rom;
 +Categories=Application;Game;
 +# vi: encoding=utf-8
