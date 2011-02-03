@@ -16,8 +16,10 @@ BuildRequires:	SDL-devel
 BuildRequires:	agg-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	gettext-devel
 BuildRequires:	gtk+2-devel >= 1:2.0
 BuildRequires:	gtkglext-devel
+BuildRequires:	intltool
 BuildRequires:	libglade2-devel >= 2.0
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.197
